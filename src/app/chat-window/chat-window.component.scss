@@ -15,20 +15,25 @@
   background-color: #202C33;
   justify-content: space-around;
   align-items: center;
-  border: 20px;
+
+  input {
+    height: 30px;
+    border: 0;
+    padding: 5px;
+    width: 80%;
+    background-color: #2A3942;
+    border-radius: 8px;
+    font-size: 15px;
+    color: #D1D7DB;
+    outline: none;
+  }
+
+  span {
+    border: 10px solid red; //debug
+  }
+
 }
 
-input {
-  height: 30px;
-  border: 0;
-  padding: 5px;
-  width: 80%;
-  background-color: #2A3942;
-  border-radius: 8px;
-  font-size: 15px;
-  color: #D1D7DB;
-  outline: none;
-}
 
 .material-symbols-outlined {
   font-variation-settings: 'FILL' 0,
