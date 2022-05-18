@@ -1,0 +1,30 @@
+.container {
+  display: flex;
+  height: 60px;
+  width: 25em;
+  background-color: #202C33;
+  align-items: center;
+  justify-content: space-between;
+
+  * {
+    margin: 0 10px;
+  }
+}
+
+span{
+  color: #aebac1;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+img {
+  width: 40px;
+  height: 40px;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}

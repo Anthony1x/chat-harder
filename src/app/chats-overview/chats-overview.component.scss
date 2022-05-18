@@ -10,6 +10,7 @@ nav {
 	width: 25em;
 	color: #e9edef;
 	background-color: #111b21;
+  cursor: pointer;
 
 	:hover {
 		background-color: #202c33;
@@ -50,8 +51,3 @@ nav {
 	color: #8696a0;
 }
 
-img {
-	height: 50px;
-	width: 50px;
-	border-radius: 50%;
-}
