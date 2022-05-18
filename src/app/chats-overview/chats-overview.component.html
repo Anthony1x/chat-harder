@@ -1,14 +1,14 @@
 <nav>
-	<div class="chat" *ngFor="let item of items">
-		<div class="your-mom">
-			<div class="left">
-				<img src="{{ item.image }}" alt="Profile Picture">
-				<div>
-					<span style="font-size: 17px;">{{item.chatterName}}</span>
-					<span style="font-size: 14px;">{{item.lastMessage}}</span>
-				</div>
-			</div>
-			<span class="date">{{item.date}}</span>
-		</div>
-	</div>
+  <div class="chat" *ngFor="let item of items">
+    <div class="your-mom">
+      <div class="left">
+        <img src="{{ item.image }}" alt="Profile Picture">
+        <div>
+          <span style="font-size: 17px;">{{item.chatterName}}</span>
+          <span style="font-size: 14px;">{{item.lastMessage}}</span>
+        </div>
+      </div>
+      <span class="date">{{item.date}}</span>
+    </div>
+  </div>
 </nav>

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core'
 
 @Component({
   selector: 'ch-chats-overview',
@@ -28,14 +28,16 @@ export class ChatsOverviewComponent implements OnInit {
       lastMessage: 'kys',
       date: '3 years ago',
     },
-  ];
+  ]
 
-  constructor() {}
+  constructor() {
+  }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+  }
 
   getInfo(item: Chat): Chat {
-    return item;
+    return item
   }
 }
 
