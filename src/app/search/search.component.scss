@@ -1,0 +1,21 @@
+.container {
+    display: flex;
+    height: 50px;
+    width: 20vw;
+    align-items: center;
+    background-color: #111B21;
+    justify-content: center;
+}
+
+input {
+    border: 0;
+    border-radius: 8px;
+    background-color: #202C33;
+    height: 35px;
+    width: 90%;
+    color: #D1D7DB;
+
+    :focus {
+        outline: none;
+    }
+}
