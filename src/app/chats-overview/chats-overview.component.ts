@@ -1,4 +1,6 @@
-import {Component, OnInit} from '@angular/core'
+import {Component, OnInit, Output} from '@angular/core'
+import {ChatService, IChat} from '../chat.service'
+import {Subscription} from 'rxjs'
 
 @Component({
   selector: 'ch-chats-overview',
@@ -6,45 +8,30 @@ import {Component, OnInit} from '@angular/core'
   styleUrls: ['./chats-overview.component.scss'],
 })
 export class ChatsOverviewComponent implements OnInit {
-  items: Chat[] = [
-    {
-      id: 1,
-      image: 'assets/img/cover5.jpg',
-      chatterName: 'Drug Dealer A',
-      lastMessage: 'Ha',
-      date: 'yesterday',
-    },
-    {
-      id: 2,
-      image: 'assets/img/cover5.jpg',
-      chatterName: 'Drug Dealer B',
-      lastMessage: 'Wanna play Mario Kart?',
-      date: '2 years ago',
-    },
-    {
-      id: 3,
-      image: 'assets/img/cover5.jpg',
-      chatterName: 'Drug Dealer C',
-      lastMessage: 'kys',
-      date: '3 years ago',
-    },
-  ]
+  chats: IChat[] = []
 
-  constructor() {
+  sub!: Subscription
+
+  errorMessage = ''
+  @Output() currentProfile = 0
+
+  constructor(private chatService: ChatService) {
+  }
+
+  getProfile(id: number) {
+    this.currentProfile = id
   }
 
   ngOnInit(): void {
+    this.sub = this.chatService.getChatters().subscribe({
+      next: (chats) => {
+        this.chats = chats
+      },
+      error: (err) => (this.errorMessage = err),
+    })
   }
 
-  getInfo(item: Chat): Chat {
-    return item
+  ngOnDestroy(): void {
+    this.sub.unsubscribe()
   }
-}
-
-interface Chat {
-  id: number;
-  image: string;
-  chatterName: string;
-  lastMessage: string;
-  date: string;
 }

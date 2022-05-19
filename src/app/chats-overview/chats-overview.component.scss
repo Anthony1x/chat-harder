@@ -1,13 +1,16 @@
-nav {
-  display: flex;
-  flex-direction: column;
+.container {
+  display: grid;
+  height: 85%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background-color: #111b21;
 }
 
 .chat {
   display: flex;
   flex-direction: column;
-  height: 72px;
-  width: 25em;
+  min-height: 72px;
+  width: 20vw;
   color: #e9edef;
   background-color: #111b21;
   cursor: pointer;

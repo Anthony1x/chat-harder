@@ -9,6 +9,7 @@ input {
   color: #D1D7DB;
   outline: none;
 }
+
 .search {
   display: flex;
   width: 100%;
@@ -17,7 +18,14 @@ input {
   background-color: #202C33;
   align-items: center;
 
-  span{
-    margin: 0 15px;
+  span {
+    margin: 0 12.5px;
   }
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
 }

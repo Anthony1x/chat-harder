@@ -1,0 +1,93 @@
+[
+  {
+    "id": 1,
+    "image": "assets/img/cover5.jpg",
+    "chatterName": "Drug Dealer A",
+    "lastMessage": "Ha",
+    "date": "yesterday"
+  },
+  {
+    "id": 2,
+    "image": "assets/img/cover5.jpg",
+    "chatterName": "Drug Dealer B",
+    "lastMessage": "Wanna play Mario Kart?",
+    "date": "2 years ago"
+  },
+  {
+    "id": 3,
+    "image": "assets/img/cover5.jpg",
+    "chatterName": "Drug Dealer C",
+    "lastMessage": "kys",
+    "date": "3 years ago"
+  },
+  {
+    "id": 4,
+    "image": "assets/img/cover5.jpg",
+    "chatterName": "Drug Dealer D",
+    "lastMessage": "kys",
+    "date": "3 years ago"
+  },
+  {
+    "id": 5,
+    "image": "assets/img/cover5.jpg",
+    "chatterName": "Drug Dealer E",
+    "lastMessage": "kys",
+    "date": "3 years ago"
+  },
+  {
+    "id": 6,
+    "image": "assets/img/cover5.jpg",
+    "chatterName": "Drug Dealer F",
+    "lastMessage": "kys",
+    "date": "3 years ago"
+  },
+  {
+    "id": 7,
+    "image": "assets/img/cover5.jpg",
+    "chatterName": "Drug Dealer G",
+    "lastMessage": "kys",
+    "date": "3 years ago"
+  },
+  {
+    "id": 8,
+    "image": "assets/img/cover5.jpg",
+    "chatterName": "Drug Dealer H",
+    "lastMessage": "kys",
+    "date": "3 years ago"
+  },
+  {
+    "id": 9,
+    "image": "assets/img/cover5.jpg",
+    "chatterName": "Drug Dealer I",
+    "lastMessage": "kys",
+    "date": "3 years ago"
+  },
+  {
+    "id": 10,
+    "image": "assets/img/cover5.jpg",
+    "chatterName": "Drug Dealer J",
+    "lastMessage": "kys",
+    "date": "3 years ago"
+  },
+  {
+    "id": 11,
+    "image": "assets/img/cover5.jpg",
+    "chatterName": "Drug Dealer K",
+    "lastMessage": "kys",
+    "date": "3 years ago"
+  },
+  {
+    "id": 12,
+    "image": "assets/img/cover5.jpg",
+    "chatterName": "Drug Dealer L",
+    "lastMessage": "kys",
+    "date": "3 years ago"
+  },
+  {
+    "id": 13,
+    "image": "assets/img/cover5.jpg",
+    "chatterName": "Drug Dealer M",
+    "lastMessage": "kys",
+    "date": "3 years ago"
+  }
+]

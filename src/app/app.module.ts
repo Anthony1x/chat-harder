@@ -9,10 +9,11 @@ import {SearchComponent} from './search/search.component'
 import {SidebarTopComponent} from './sidebar-top/sidebar-top.component'
 import {ChatWindowHeaderComponent} from './chat-window-header/chat-window-header.component';
 import { ChatInputComponent } from './chat-input/chat-input.component'
+import {HttpClientModule} from '@angular/common/http'
 
 @NgModule({
   declarations: [AppComponent, ChatsOverviewComponent, ChatWindowComponent, SearchComponent, SidebarTopComponent, ChatWindowHeaderComponent, ChatInputComponent],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],
 })

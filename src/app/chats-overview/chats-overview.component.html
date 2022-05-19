@@ -1,14 +1,14 @@
-<nav>
-  <div class="chat" *ngFor="let item of items">
+<div class="container">
+  <div class="chat" *ngFor="let chatter of chats" (click)="getProfile(chatter.id)">
     <div class="your-mom">
       <div class="left">
-        <img src="{{ item.image }}" alt="Profile Picture">
+        <img src="{{ chatter.image }}" alt="Profile Picture">
         <div>
-          <span style="font-size: 17px;">{{item.chatterName}}</span>
-          <span style="font-size: 14px;">{{item.lastMessage}}</span>
+          <span style="font-size: 17px;">{{chatter.chatterName}}</span>
+          <span style="font-size: 14px;">{{chatter.lastMessage}}</span>
         </div>
       </div>
-      <span class="date">{{item.date}}</span>
+      <span class="date">{{chatter.date}}</span>
     </div>
   </div>
-</nav>
+</div>

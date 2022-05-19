@@ -3,4 +3,14 @@
   //box-shadow: 0 6px 18px rgba(11, 20, 26, .05);
   width: 90%;
   justify-content: center;
+  height: 95vh;
+}
+
+.sidebar, .content {
+  height: 100%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
 }

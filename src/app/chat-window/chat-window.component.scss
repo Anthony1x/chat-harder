@@ -1,11 +1,11 @@
-.container {
-
-}
 
 .chat-window {
   display: flex;
   flex-direction: column;
-  height: 85vh;
+  height: 80vh;
+  width: 60vw;
+  overflow-y: auto;
+  overflow-x: hidden;
   background-color: #303f48;
 }
 
@@ -13,10 +13,20 @@
   display: flex;
   align-items: center;
   margin: 15px;
-  max-width: 40%;
+  max-width: 50%;
   padding: 10px;
-  border-radius: 8px;
+  border-radius: 12px;
   color: #e9edef;
+
+  font-size: 14.2px;
+
+  //defaults to slave
+  background-color: #202c33;
+  align-self: flex-start;
+
+  .timestamp{
+    white-space:nowrap;
+  }
 }
 
 .master {
@@ -24,14 +34,9 @@
   align-self: flex-end;
 }
 
-.slave {
-  background-color: #202c33;
-  align-self: flex-start;
+.timestamp {
+  align-self: flex-end;
+  font-size: 11px;
+  color: #FFFFFF99;
 }
 
-.material-symbols-outlined {
-  font-variation-settings: 'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 48
-}

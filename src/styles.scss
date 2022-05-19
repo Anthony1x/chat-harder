@@ -18,3 +18,22 @@ img {
   width: 50px;
   border-radius: 50%;
 }
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #1c2a33;
+
+  :hover {
+    background: #374045;
+  }
+}
