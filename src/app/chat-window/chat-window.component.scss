@@ -3,37 +3,31 @@
 }
 
 .chat-window {
+  display: flex;
+  flex-direction: column;
   height: 85vh;
   background-color: #303f48;
 }
 
-.search {
+.chatter {
   display: flex;
-  width: 100%;
-  height: 62px;
-  color: #D1D7DB;
-  background-color: #202C33;
-  justify-content: space-around;
   align-items: center;
-
-  input {
-    height: 30px;
-    border: 0;
-    padding: 5px;
-    width: 80%;
-    background-color: #2A3942;
-    border-radius: 8px;
-    font-size: 15px;
-    color: #D1D7DB;
-    outline: none;
-  }
-
-  span {
-    border: 10px solid red; //debug
-  }
-
+  margin: 15px;
+  max-width: 40%;
+  padding: 10px;
+  border-radius: 8px;
+  color: #e9edef;
 }
 
+.master {
+  background-color: #005c4b;
+  align-self: flex-end;
+}
+
+.slave {
+  background-color: #202c33;
+  align-self: flex-start;
+}
 
 .material-symbols-outlined {
   font-variation-settings: 'FILL' 0,

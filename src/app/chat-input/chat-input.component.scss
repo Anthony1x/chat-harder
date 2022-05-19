@@ -1,0 +1,23 @@
+input {
+  height: 30px;
+  border: 0;
+  padding: 5px;
+  width: 100%;
+  background-color: #2A3942;
+  border-radius: 8px;
+  font-size: 15px;
+  color: #D1D7DB;
+  outline: none;
+}
+.search {
+  display: flex;
+  width: 100%;
+  height: 62px;
+  color: #D1D7DB;
+  background-color: #202C33;
+  align-items: center;
+
+  span{
+    margin: 0 15px;
+  }
+}
