@@ -2,11 +2,17 @@
   <div class="sidebar">
     <ch-sidebar-top></ch-sidebar-top>
     <ch-search></ch-search>
-    <ch-chats-overview></ch-chats-overview>
+    <ch-chats-overview (newItemEvent)="openChatId = $event"></ch-chats-overview>
   </div>
   <div class="content">
-    <ch-chat-window-header></ch-chat-window-header>
-    <ch-chat-window></ch-chat-window>
-    <ch-chat-input></ch-chat-input>
+    <ng-container *ngIf="openChatId !== undefined; else elseWindow">
+      <ch-chat-window-header></ch-chat-window-header>
+      <ch-chat-window [chatId]="openChatId"></ch-chat-window>
+      <ch-chat-input></ch-chat-input>
+    </ng-container>
+
+    <ng-template #elseWindow>
+      Select chat to start chatting :P
+    </ng-template>
   </div>
 </div>

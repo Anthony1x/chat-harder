@@ -7,14 +7,16 @@ import {catchError, map, Observable, tap, throwError} from 'rxjs'
 })
 export class ChatService {
 
-  private chatterUrl = 'api/chat01.json'
+  private chatterUrl = 'api/chat1.json'
   private chatterOverviewUrl = 'api/chatters.json'
+
 
   constructor(private http: HttpClient) {
   }
 
-  getChatMessages(): Observable<{ id: number, messages: IChatMessage[] }> {
-    return this.http.get<{ id: number, messages: IChatMessage[] }>(this.chatterUrl)
+  getChatMessages(id: number): Observable<{ id: number, messages: IChatMessage[] }> {
+    console.log(id)
+    return this.http.get<{ id: number, messages: IChatMessage[] }>(`api/chat${(id)}.json`)
       .pipe(
         tap(data => console.log('All: ', JSON.stringify(data))),
         catchError(this.handleError)

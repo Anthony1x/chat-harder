@@ -1,6 +1,7 @@
-import {Component, OnInit, Output} from '@angular/core'
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core'
 import {ChatService, IChat} from '../chat.service'
 import {Subscription} from 'rxjs'
+import {ChatWindowComponent} from '../chat-window/chat-window.component'
 
 @Component({
   selector: 'ch-chats-overview',
@@ -13,14 +14,13 @@ export class ChatsOverviewComponent implements OnInit {
   sub!: Subscription
 
   errorMessage = ''
-  @Output() currentProfile = 0
 
-  constructor(private chatService: ChatService) {
+  @Output() newItemEvent = new EventEmitter<number | undefined>();
+
+
+  constructor(public chatService: ChatService) {
   }
 
-  getProfile(id: number) {
-    this.currentProfile = id
-  }
 
   ngOnInit(): void {
     this.sub = this.chatService.getChatters().subscribe({

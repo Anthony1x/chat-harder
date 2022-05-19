@@ -1,5 +1,5 @@
 <div class="container">
-  <div class="chat" *ngFor="let chatter of chats" (click)="getProfile(chatter.id)">
+  <div class="chat" *ngFor="let chatter of chats" (click)="newItemEvent.emit(chatter.id)">
     <div class="your-mom">
       <div class="left">
         <img src="{{ chatter.image }}" alt="Profile Picture">
