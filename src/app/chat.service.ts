@@ -7,7 +7,6 @@ import {catchError, map, Observable, tap, throwError} from 'rxjs'
 })
 export class ChatService {
 
-  private chatterUrl = 'api/chat1.json'
   private chatterOverviewUrl = 'api/chatters.json'
 
 
