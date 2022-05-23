@@ -15,12 +15,17 @@ export class ChatsOverviewComponent implements OnInit {
 
   errorMessage = ''
 
-  @Output() newItemEvent = new EventEmitter<number | undefined>();
+  @Output() newItemEvent = new EventEmitter<number | undefined>()
 
 
   constructor(public chatService: ChatService) {
   }
 
+  activeChatter = 0
+
+  clickEvent(chatterId: number) {
+    this.activeChatter = chatterId
+  }
 
   ngOnInit(): void {
     this.sub = this.chatService.getChatters().subscribe({
