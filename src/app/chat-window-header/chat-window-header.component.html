@@ -5,6 +5,14 @@
   </div>
   <div class="icons">
     <span class="material-symbols-outlined">search</span>
-    <span class="material-symbols-outlined">more_vert</span>
+    <span class="material-symbols-outlined" (click)=" ms.clickEventRight()">more_vert</span>
+    <div class="dropdown-content" [ngClass]="{'show' : ms.rightBurger}">
+      <a href="#">Contact Info</a>
+      <a href="#">Select messages</a>
+      <a href="#">Close chat</a>
+      <a href="#">Mute notifications</a>
+      <a href="#">Clear Messages</a>
+      <a href="#">Delete Chat</a>
+    </div>
   </div>
 </div>
