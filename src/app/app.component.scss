@@ -3,9 +3,8 @@
   //box-shadow: 0 6px 18px rgba(11, 20, 26, .05);
   width: 90%;
   justify-content: center;
-  align-items: center;
+  //align-items: center; //fucks shit up
   margin: 0 auto;
-  height: 100%;
 
   @media (max-width: 700px) {
     width: 100%;
