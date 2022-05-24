@@ -5,15 +5,12 @@
     <ch-chats-overview (newItemEvent)="openChatId = $event"></ch-chats-overview>
   </div>
   <div class="content">
-    <!--    <ng-container *ngIf="openChatId !== undefined; else elseWindow">-->
-    <ch-chat-window-header></ch-chat-window-header>
-    <ch-chat-window></ch-chat-window>
-    <!--      <ch-chat-window [chatId]="openChatId"></ch-chat-window>-->
-    <ch-chat-input></ch-chat-input>
-    <!--    </ng-container>-->
+      <ch-chat-window-header></ch-chat-window-header>
+      <ch-chat-window *ngIf="openChatId !== undefined; else elseWindow" [chatId]="openChatId"></ch-chat-window>
+      <ch-chat-input></ch-chat-input>
 
-    <!--    <ng-template #elseWindow>-->
-    <!--      <div style="color: aliceblue"> Select chat to start chatting :P</div>-->
-    <!--    </ng-template>-->
+    <ng-template #elseWindow>
+      <ch-chat-window [chatId]="0"></ch-chat-window>
+    </ng-template>
   </div>
 </div>

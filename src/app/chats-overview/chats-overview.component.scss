@@ -1,6 +1,8 @@
+@use '../../variables' as v;
+
 .container {
   display: grid;
-  height: 85%;
+  max-height: calc(81vh);
   overflow-y: auto;
   overflow-x: hidden;
   background-color: #111b21;
@@ -9,8 +11,11 @@
 .chat {
   display: flex;
   flex-direction: column;
-  min-height: 72px;
-  width: 20vw;
+  height: 72px;
+  width: 480px;
+  @media (max-width: v.$max-width) {
+    width: 30vw;
+  }
   color: #e9edef;
   background-color: #111b21;
   cursor: pointer;

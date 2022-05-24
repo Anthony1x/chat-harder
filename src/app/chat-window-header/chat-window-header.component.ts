@@ -1,4 +1,6 @@
-import {Component, OnInit} from '@angular/core'
+import {Component, Input, OnInit} from '@angular/core'
+import {Subscription} from 'rxjs'
+import {ChatService, IChat} from '../chat.service'
 
 @Component({
   selector: 'ch-chat-window-header',
@@ -7,7 +9,14 @@ import {Component, OnInit} from '@angular/core'
 })
 export class ChatWindowHeaderComponent implements OnInit {
 
-  constructor() {
+
+  chatterName: string = "Placeholder"
+
+  sub?: Subscription;
+
+
+  constructor(public chatService: ChatService) {
+
   }
 
   ngOnInit(): void {

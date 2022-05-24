@@ -8,6 +8,7 @@ import { Subscription, takeUntil } from 'rxjs';
   styleUrls: ['./chat-window.component.scss'],
 })
 export class ChatWindowComponent implements OnInit {
+
   chatMessages: IChatMessage[] = [];
 
   sub?: Subscription;
