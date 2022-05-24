@@ -1,6 +1,8 @@
+@use '../../variables' as v;
+
 .container {
   display: flex;
-  height: 60px;
+  height: v.$header-height;
   background-color: #202C33;
   align-items: center;
   justify-content: space-between;

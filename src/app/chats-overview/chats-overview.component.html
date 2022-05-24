@@ -1,15 +1,17 @@
-<div class="container">
-  <div class="chat" *ngFor="let chatter of chats" (click)="newItemEvent.emit(chatter.id); clickEvent(chatter.id)"
-       [ngClass]="{'focused' : chatter.id === activeChatter}">
-    <div class="your-mom">
-      <div class="left">
-        <img src="{{ chatter.image }}" alt="Profile Picture">
-        <div>
-          <span style="font-size: 17px;">{{chatter.chatterName}}</span>
-          <span style="font-size: 14px;">{{chatter.lastMessage}}</span>
+<div class="super-container">
+  <div class="container">
+    <div class="chat" *ngFor="let chatter of chats" (click)="newItemEvent.emit(chatter.id); clickEvent(chatter.id)"
+         [ngClass]="{'focused' : chatter.id === activeChatter}">
+      <div class="your-mom">
+        <div class="left">
+          <img src="{{ chatter.image }}" alt="Profile Picture">
+          <div>
+            <span style="font-size: 17px;">{{chatter.chatterName}}</span>
+            <span style="font-size: 14px;">{{chatter.lastMessage}}</span>
+          </div>
         </div>
+        <span class="date">{{chatter.date}}</span>
       </div>
-      <span class="date">{{chatter.date}}</span>
     </div>
   </div>
 </div>

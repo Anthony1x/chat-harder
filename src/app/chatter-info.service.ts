@@ -7,6 +7,6 @@ import {ChatService} from './chat.service'
 export class ChatterInfoService {
 
 
-  constructor(private chatService: ChatService) {
+  constructor() {
   }
 }
