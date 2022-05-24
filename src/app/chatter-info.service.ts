@@ -1,5 +1,5 @@
 import {Injectable} from '@angular/core'
-import {ChatService} from './chat.service'
+import {IChat} from './chat.service'
 
 @Injectable({
   providedIn: 'root'
@@ -7,6 +7,8 @@ import {ChatService} from './chat.service'
 export class ChatterInfoService {
 
 
-  constructor() {
-  }
+
+constructor()
+{
+}
 }

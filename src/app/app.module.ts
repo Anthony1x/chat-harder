@@ -13,10 +13,11 @@ import {HttpClientModule} from '@angular/common/http';
 import {MenusService} from './menus.service'
 import {ChatService} from './chat.service'
 import {ChatterInfoService} from './chatter-info.service'
+import {FormsModule} from '@angular/forms'
 
 @NgModule({
   declarations: [AppComponent, ChatsOverviewComponent, ChatWindowComponent, SearchComponent, SidebarTopComponent, ChatWindowHeaderComponent, ChatInputComponent],
-  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
+    imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule],
   providers: [MenusService, ChatService, ChatterInfoService],
   bootstrap: [AppComponent],
 })

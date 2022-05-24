@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core'
 import {Subscription} from 'rxjs'
 import {MenusService} from '../menus.service'
+import {ChatService} from '../chat.service'
 
 @Component({
   selector: 'ch-chat-window-header',
@@ -10,14 +11,16 @@ import {MenusService} from '../menus.service'
 export class ChatWindowHeaderComponent implements OnInit {
 
 
-  chatterName: string = 'Placeholder'
-
   sub?: Subscription
 
   ms!: MenusService
+  a!: ChatService
 
-  constructor(ms: MenusService) {
+  chatterName: string = 'Placeholder'
+
+  constructor(ms: MenusService, a: ChatService) {
     this.ms = ms
+    this.a = a
   }
 
   ngOnInit(): void {

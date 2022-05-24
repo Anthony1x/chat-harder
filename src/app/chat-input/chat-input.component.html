@@ -3,7 +3,11 @@
   <span class="material-symbols-outlined">attachment</span>
   <div class="form">
     <form action="">
-      <input type="text" placeholder="Type a message">
+      <input required
+             ngModel
+             name="input"
+             type="text"
+             placeholder="Type a message">
     </form>
   </div>
   <ng-container *ngIf="false; else submitButton">
