@@ -1,6 +1,6 @@
-import { Component, Input, OnInit } from '@angular/core';
-import { ChatService, IChatMessage } from '../chat.service';
-import { Subscription, takeUntil } from 'rxjs';
+import {Component, Input, OnInit} from '@angular/core'
+import {ChatService, IChatMessage} from '../chat.service'
+import {Subscription} from 'rxjs'
 
 @Component({
   selector: 'ch-chat-window',
@@ -9,30 +9,32 @@ import { Subscription, takeUntil } from 'rxjs';
 })
 export class ChatWindowComponent implements OnInit {
 
-  chatMessages: IChatMessage[] = [];
+  chatMessages: IChatMessage[] = []
 
-  sub?: Subscription;
+  sub?: Subscription
 
-  errorMessage = '';
+  errorMessage = ''
 
   @Input() set chatId(chatId: number) {
-    this.sub?.unsubscribe();
+    this.sub?.unsubscribe()
 
     this.sub = this.chatService.getChatMessages(chatId).subscribe({
       next: (chatMessages) => {
-        console.log(chatMessages);
-        this.chatMessages = chatMessages.messages;
+        console.log(chatMessages)
+        this.chatMessages = chatMessages.messages
       },
       error: (err) => (this.errorMessage = err),
-    });
+    })
   }
 
-  constructor(private chatService: ChatService) {}
+  constructor(private chatService: ChatService) {
+  }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+  }
 
   ngOnDestroy(): void {
-    console.log('sdfjkldsjf');
-    this.sub!.unsubscribe();
+    console.log('sdfjkldsjf')
+    this.sub!.unsubscribe()
   }
 }

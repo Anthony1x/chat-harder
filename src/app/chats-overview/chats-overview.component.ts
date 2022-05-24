@@ -1,7 +1,6 @@
-import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core'
+import {Component, EventEmitter, OnInit, Output} from '@angular/core'
 import {ChatService, IChat} from '../chat.service'
 import {Subscription} from 'rxjs'
-import {ChatWindowComponent} from '../chat-window/chat-window.component'
 
 @Component({
   selector: 'ch-chats-overview',

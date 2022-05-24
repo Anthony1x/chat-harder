@@ -11,5 +11,4 @@ export class AppComponent {
   openChatId: number | undefined
 
 
-
 }

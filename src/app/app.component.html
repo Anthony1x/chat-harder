@@ -5,9 +5,9 @@
     <ch-chats-overview (newItemEvent)="openChatId = $event"></ch-chats-overview>
   </div>
   <div class="content">
-      <ch-chat-window-header></ch-chat-window-header>
-      <ch-chat-window *ngIf="openChatId !== undefined; else elseWindow" [chatId]="openChatId"></ch-chat-window>
-      <ch-chat-input></ch-chat-input>
+    <ch-chat-window-header></ch-chat-window-header>
+    <ch-chat-window *ngIf="openChatId !== undefined; else elseWindow" [chatId]="openChatId"></ch-chat-window>
+    <ch-chat-input></ch-chat-input>
 
     <ng-template #elseWindow>
       <ch-chat-window [chatId]="0"></ch-chat-window>

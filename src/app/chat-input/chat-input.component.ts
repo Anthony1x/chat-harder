@@ -1,5 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core'
-import {ChatService} from '../chat.service'
+import {Component, OnInit} from '@angular/core'
 
 @Component({
   selector: 'ch-chat-input',
@@ -7,8 +6,6 @@ import {ChatService} from '../chat.service'
   styleUrls: ['./chat-input.component.scss']
 })
 export class ChatInputComponent implements OnInit {
-
-
 
 
   constructor() {
