@@ -1,0 +1,20 @@
+[
+  {
+    "chatID": 3,
+    "message": "sup",
+    "sentByID": 23,
+    "timestamp": 1653470166
+  },
+  {
+    "chatID": 3,
+    "message": "guten tag",
+    "sentByID": 23,
+    "timestamp": 1653470351
+  },
+  {
+    "chatID": 4,
+    "message": "sup",
+    "sentByID": 75,
+    "timestamp": 1653470351
+  }
+]

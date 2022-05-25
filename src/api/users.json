@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "username": "lukas",
+    "image": "assets/img/cover5.jpg",
+    "accountCreationDate": "02-02-2022"
+  },
+  {
+    "id": 2,
+    "username": "florian",
+    "image": "assets/img/cover5.jpg",
+    "accountCreationDate": "03-02-2022"
+  }
+]
