@@ -49,7 +49,12 @@
 }
 
 .text {
+  font-size: 14px;
   margin-left: 10px;
+  overflow: hidden;
+  max-width: 42ch;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .your-mom {
@@ -77,3 +82,4 @@
     background-color: #2a3942;
   }
 }
+

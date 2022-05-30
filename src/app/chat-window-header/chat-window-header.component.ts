@@ -16,7 +16,7 @@ export class ChatWindowHeaderComponent implements OnInit {
   ms!: MenusService
   a!: ChatService
 
-  chatterName: string = 'Placeholder'
+  chatterName: string = 'Drug Dealer A'
 
   constructor(ms: MenusService, a: ChatService) {
     this.ms = ms
